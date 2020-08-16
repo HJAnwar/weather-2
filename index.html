@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Weather Today</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url(images/11.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh; 
+            
+        }
+        #weather{
+            font-size: 35px;
+            
+        }
+      
+    </style>
+</head>
+
+<body>
+        <div class="container" id="center">
+            <form class="col-md-6 m-auto py-5">
+                <div class="input-group mb-3" id="padding">
+                    <input id="text-box" type="text" class="form-control" placeholder="Enter a location for Weather ...">
+                    <div class="input-group-append">
+                       <button id="search-button" type="button" class="btn btn-danger">Search</button>
+                    </div>
+                </div>
+            </form>
+            <div class="weather-status text-white text-center">
+                <img id="image" src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+                <br>
+                <h1 id="city"></h1>
+                
+                <h1><span id="temperature">00</span>&deg;C</h1>
+                
+                <h1 id="weather" class="lead"></h1>
+
+                <h5 class="min-max" id="min-max">0&deg;C (min) / 0&deg;C (max)</h5>
+              
+
+            </div>
+        </div>
+    
+    <script src="data.js"></script>    
+</body>
+
+</html>
